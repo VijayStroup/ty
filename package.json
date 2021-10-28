@@ -1,0 +1,39 @@
+{
+  "name": "frodo",
+  "version": "1.0.0",
+  "description": "Discord Bot for Knights Discord Server",
+  "type": "module",
+  "engines": {
+    "node": "16.8.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node deployCommands.js && node .",
+    "dev": "nodemon .",
+    "register": "node deployCommands.js",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VijayStroup/frodo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VijayStroup/frodo/issues"
+  },
+  "homepage": "https://github.com/VijayStroup/frodo#readme",
+  "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "axios": "^0.24.0",
+    "discord-api-types": "^0.24.0",
+    "discord.js": "^13.2.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.12"
+  }
+}
