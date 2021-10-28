@@ -31,7 +31,7 @@ const Ready = {
         await cmd[1].permissions.add({ permissions })
       }
     }
-    
+
     client.user.setActivity('yo moma', { type: 'PLAYING' })
 
     console.log(`Ready! Logged in as ${client.user.tag}`)
