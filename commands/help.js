@@ -3,12 +3,6 @@ import { MessageEmbed } from 'discord.js'
 import getCommands from '../utils/getCommands.js'
 import colors from '../utils/colors.js'
 
-const commandsEmbed = new MessageEmbed()
-  .setColor(colors.gold)
-  .setTitle('Commands')
-  .setDescription('Below is a list of all available commands and their descriptions.\n*Members only command\n**Admin only command')
-  .setTimestamp()
-
 let commands
 (async () => { commands = await getCommands() })()
 
@@ -17,6 +11,11 @@ const Help = {
     .setName('help')
     .setDescription('Respond with a list of commands.'),
   async execute(interaction) {
+    const commandsEmbed = new MessageEmbed()
+      .setColor(colors.gold)
+      .setTitle('Commands')
+      .setDescription('Below is a list of all available commands and their descriptions.\n*Members only command\n**Admin only command')
+      .setTimestamp()
     for (const key in commands) {
       if (commands[key].roles && commands[key].roles.includes('Members'))
         commandsEmbed.addField(key, `${commands[key].builder.description}*`)
