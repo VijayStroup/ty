@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node deployCommands.js && node .",
+    "start": "node deployCommands.js && node . > log.txt 2>&1 &",
     "dev": "nodemon .",
     "register": "node deployCommands.js",
     "lint": "eslint ."
