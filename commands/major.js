@@ -3,18 +3,28 @@ import { MessageActionRow, MessageSelectMenu } from 'discord.js'
 
 const options = [
   {
-    label: 'Computer Science',
+    label: 'Business',
+    emoji: '🏢',
+    value: 'Business'
+  },
+  {
+    label: 'Computer Engineering',
     description: '👨‍💻',
+    value: 'ComputerEngineering'
+  },
+  {
+    label: 'Computer Science',
+    emoji: '👨‍💻',
     value: 'ComputerScience'
   },
   {
-    label: 'Psychology',
-    description: '🤯',
-    value: 'Psychology'
+    label: 'Electrical Engineering',
+    description: '📐',
+    value: 'ElectricalEngineering'
   },
   {
     label: 'Finance',
-    description: '💰',
+    emoji: '💰',
     value: 'Finance'
   },
   {
@@ -23,14 +33,9 @@ const options = [
     value: 'HealthSciences'
   },
   {
-    label: 'Engineering',
-    description: '📐',
-    value: 'Engineering'
-  },
-  {
-    label: 'Women Studies',
-    description: '👯‍♀️',
-    value: 'WomenStudies'
+    label: 'Information Technology',
+    emoji: '👨‍💻',
+    value: 'InformationTechnology'
   },
   {
     label: 'Mathematics',
@@ -38,21 +43,34 @@ const options = [
     value: 'Mathematics'
   },
   {
-    label: 'Business',
-    description: '🏢',
-    value: 'Business'
+    label: 'Mechanical Engineering',
+    emoji: '📐',
+    value: 'MechanicalEngineering'
   },
+  {
+    label: 'Psychology',
+    description: '🤯',
+    value: 'Psychology'
+  },
+  {
+    label: 'Women Studies',
+    emoji: '👯‍♀️',
+    value: 'WomenStudies'
+  }
 ]
 
 const rolesMap = {
+  Business: 'Business',
+  ComputerEngineering: 'Computer Engineering',
   ComputerScience: 'Computer Science',
-  Psychology: 'Psychology',
+  ElectricalEngineering: 'Electrical Engineering',
   Finance: 'Finance',
   HealthSciences: 'Health Sciences',
-  Engineering: 'Engineering',
-  WomenStudies: 'Women Studies',
+  InformationTechnology: 'Information Technology',
   Mathematics: 'Mathematics',
-  Business: 'Business'
+  MechanicalEngineering: 'Mechanical Engineering',
+  Psychology: 'Psychology',
+  WomenStudies: 'Women Studies'
 }
 
 const rolesSet = new Set(Object.keys(rolesMap))
