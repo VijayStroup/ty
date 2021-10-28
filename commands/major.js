@@ -9,7 +9,7 @@ const options = [
   },
   {
     label: 'Computer Engineering',
-    description: '👨‍💻',
+    emoji: '👨‍💻',
     value: 'ComputerEngineering'
   },
   {
@@ -19,7 +19,7 @@ const options = [
   },
   {
     label: 'Electrical Engineering',
-    description: '📐',
+    emoji: '📐',
     value: 'ElectricalEngineering'
   },
   {
@@ -29,7 +29,7 @@ const options = [
   },
   {
     label: 'Health Sciences',
-    description: '⚕️',
+    emoji: '⚕️',
     value: 'HealthSciences'
   },
   {
@@ -39,7 +39,7 @@ const options = [
   },
   {
     label: 'Mathematics',
-    description: '🧮',
+    emoji: '🧮',
     value: 'Mathematics'
   },
   {
@@ -49,7 +49,7 @@ const options = [
   },
   {
     label: 'Psychology',
-    description: '🤯',
+    emoji: '🤯',
     value: 'Psychology'
   },
   {
