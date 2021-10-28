@@ -26,7 +26,7 @@ const Help = {
         commandsEmbed.addField(key, commands[key].builder.description)
     }
 
-    await interaction.reply({ embeds: [commandsEmbed] })
+    await interaction.reply({ embeds: [commandsEmbed], ephemeral: true })
   }
 }
 
