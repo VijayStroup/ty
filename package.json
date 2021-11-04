@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/VijayStroup/frodo#readme",
   "dependencies": {
-    "@discordjs/builders": "^0.8.2",
     "@discordjs/rest": "^0.1.0-canary.0",
     "axios": "^0.24.0",
     "cron": "^1.8.2",
