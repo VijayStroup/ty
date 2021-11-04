@@ -12,7 +12,7 @@ const FunReplies = {
     else if (loweredMessage === 'based')
       await message.reply('based on what?')
     else if (`${loweredMessage.split(' ')[0]} ${loweredMessage.split(' ')[1]}` === 'homie said')
-      await message.reply(`homie said "${message.content}"`) 
+      await message.reply(`homie said "${message.cleanContent}"`) 
   }
 }
 
