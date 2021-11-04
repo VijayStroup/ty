@@ -1,5 +1,6 @@
 import { config } from 'dotenv'
 import getCommands from '../utils/getCommands.js'
+import StartJobs from '../utils/startJobs.js'
 
 config()
 
@@ -32,7 +33,10 @@ const Ready = {
       }
     }
 
-    client.user.setActivity('yo moma', { type: 'PLAYING' })
+    // start jobs
+    await StartJobs(guild)
+
+    client.user.setActivity('yo moma and /help', { type: 'PLAYING' })
 
     console.log(`Ready! Logged in as ${client.user.tag}`)
   }
