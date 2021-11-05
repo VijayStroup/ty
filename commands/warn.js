@@ -17,7 +17,7 @@ const Warn = {
     const target = interaction.options.getMember('user')
     const reason = interaction.options.getString('reason')
 
-    await target.send(`You have been warned from **${interaction.member.user.username}** for reason **${reason}**`)
+    await target.send(`You have been warned from **[REDACTED]** for reason **${reason}**`)
 
     await interaction.reply({ content: `You have warned ${target.user.username} for reason ${reason}.`, ephemeral: true })
   }
