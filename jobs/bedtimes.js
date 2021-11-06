@@ -1,13 +1,13 @@
 import moment from 'moment'
 
 const bedtimes = {
-  0: [177940582226722816],
-  9: [81187850996953088],
-  21: [841043611414954034]
+  0: ['177940582226722816'],
+  9: ['81187850996953088'],
+  21: ['841043611414954034']
 }
 
 const Bedtimes = {
-  cronPattern: '* * * * *', // every minute
+  cronPattern: '0 * * * *', // every hour at minute 0
   channel: '💬｜general',
   async execute(channel) {
     const hour = moment().tz('America/New_York').hour()
