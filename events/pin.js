@@ -11,7 +11,7 @@ const Pin = {
     const threshold = (await (await client.guilds.fetch(process.env.GUILD_ID)).members.fetch()).size * .2
     const message = await (await client.channels.fetch(packet.d.channel_id)).messages.fetch(packet.d.message_id)
 
-    if (message.reactions.resolve('📌').count >= threshold) {
+    if (message.reactions.resolve('📌') && message.reactions.resolve('📌').count >= threshold) {
       await message.pin()
       await message.reply('This message has been pinned.')
     }
