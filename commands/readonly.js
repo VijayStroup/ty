@@ -18,7 +18,7 @@ const ReadOnly = {
 
     await target.roles.add(roles.find(role => role.name === 'readonly'))
 
-    await interaction.reply({ content: `${target.user.username} is now in readonly mode.` })
+    await interaction.reply({ content: `<@${target.user.id}> is now in readonly mode.` })
   }
 }
 
