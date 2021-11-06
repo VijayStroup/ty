@@ -18,8 +18,8 @@ const Ready = {
 
     // correct command permissions
     for (const cmd of guildCommands) {
+      const permissions = []
       if (commands[cmd[1].name].roles) {
-        const permissions = []
         for (const r of commands[cmd[1].name].roles) {
           const role = await guildRoles.find(role => role.name === r)
           permissions.push({
@@ -28,9 +28,17 @@ const Ready = {
             permission: true
           })
         }
-
-        await cmd[1].permissions.add({ permissions })
       }
+      if (commands[cmd[1].name].members) {
+        for (const m of commands[cmd[1].name].members) {
+          permissions.push({
+            id: m,
+            type: 'USER',
+            permission: true
+          })
+        }
+      }
+      await cmd[1].permissions.add({ permissions })
     }
 
     // start jobs
