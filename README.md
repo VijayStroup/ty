@@ -6,6 +6,7 @@ A discord bot to help facilitate operations in the [Knights Discord](https://dis
 | ----------- | ----------- |
 | channels | Array of channel names command is allowed to be executed in. |
 | roles | Array of role names allowed to execute command. |
+| members | Array of member id's allowed to execute command. |
 
 ## Event Options
 | Syntax | Description |
