@@ -6,8 +6,6 @@ const FunReplies = {
     const coin = (Math.floor(Math.random() * 2) == 0)
     const loweredMessage = message.content.toLowerCase()
 
-    console.log(message.content.length)
-
     if (coin) {
       if (loweredMessage.split(' ')[0] === 'who')
         await message.reply('https://tenor.com/view/nba-shaquille-o-neal-yo-moma-point-laugh-gif-4759702')
