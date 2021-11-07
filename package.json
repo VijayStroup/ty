@@ -28,6 +28,7 @@
   "dependencies": {
     "@discordjs/builders": "^0.6.0",
     "@discordjs/rest": "^0.1.0-canary.0",
+    "@koenie06/discord.js-music": "^1.2.9",
     "axios": "^0.24.0",
     "cron": "^1.8.2",
     "discord-api-types": "^0.22.0",
