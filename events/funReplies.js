@@ -15,6 +15,8 @@ const FunReplies = {
         await message.reply('based on what?')
       else if (`${loweredMessage.split(' ')[0]} ${loweredMessage.split(' ')[1]}` === 'homie said')
         await message.reply({ content: `homie said "${message.content.length <= 1987 ? message.content : 'that message too long homie'}"`, allowedMentions: {parse: []} }) 
+      else if (message.mentions.has(message.client.user.id))
+        await message.reply('bing chilling')
     }
   }
 }
