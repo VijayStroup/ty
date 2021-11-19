@@ -17,10 +17,8 @@ const Help = {
       .setDescription('Below is a list of all available commands and their descriptions.\n*Members only command\n**Admin only command')
       .setTimestamp()
     for (const key in commands) {
-      if (commands[key].roles && commands[key].roles.includes('Members'))
+      if (commands[key].roles && commands[key].roles.includes('Admin'))
         commandsEmbed.addField(key, `${commands[key].builder.description}*`)
-      else if (commands[key].roles && commands[key].roles.includes('Admin'))
-        commandsEmbed.addField(key, `${commands[key].builder.description}**`)
       else
         commandsEmbed.addField(key, commands[key].builder.description)
     }
