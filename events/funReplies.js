@@ -17,6 +17,9 @@ const FunReplies = {
         await message.reply({ content: `homie said "${message.content.length <= 1987 ? message.content : 'that message too long homie'}"`, allowedMentions: {parse: []} }) 
       else if (message.mentions.has(message.client.user.id))
         await message.reply('bing chilling')
+       else if(loweredMessage === 'where are you')
+         await message.reply('https://tenor.com/view/your-mom-moms-house-your-moms-house-mother-your-mother-gif-20551331')
+      
     }
   }
 }
