@@ -4,7 +4,7 @@ const LearnReminder = {
   cronPattern: '0 * * * *', // every hour at minute 0
   channel: '💬｜general',
   async execute(channel) {
-    for (let user of users)
+    for (const user of users)
       await channel.send(`Go learn how to code <@${user}>`)
   }
 }
