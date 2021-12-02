@@ -21,6 +21,8 @@ const FunReplies = {
         await message.reply('poggers')
       else if (loweredMessage === 'bing bong')
         await message.reply('bing bong')
+      else if (loweredMessage === 'stop')
+        await message.reply('no you')
     }
   }
 }
