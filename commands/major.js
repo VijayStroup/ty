@@ -28,6 +28,11 @@ const options = [
     value: 'Finance'
   },
   {
+    label: 'Forensic Science',
+    emoji:  '🔎',
+    value: 'ForensicScience'
+  },
+  {
     label: 'Health Sciences',
     emoji: '⚕️',
     value: 'HealthSciences'
@@ -56,12 +61,7 @@ const options = [
     label: 'Women Studies',
     emoji: '👯‍♀️',
     value: 'WomenStudies'
-  },
-  {
-    label: 'Forensic Science',
-    emoji:  '🔎',
-    value: 'ForensicScience'
-  },
+  }
 ]
 
 const rolesMap = {
@@ -70,13 +70,13 @@ const rolesMap = {
   ComputerScience: 'Computer Science',
   ElectricalEngineering: 'Electrical Engineering',
   Finance: 'Finance',
+  ForensicScience: 'Forensic Science',
   HealthSciences: 'Health Sciences',
   InformationTechnology: 'Information Technology',
   Mathematics: 'Mathematics',
   MechanicalEngineering: 'Mechanical Engineering',
   Psychology: 'Psychology',
-  WomenStudies: 'Women Studies',
-  ForensicScience: 'Forensic Science'
+  WomenStudies: 'Women Studies'
 }
 
 const rolesSet = new Set(Object.keys(rolesMap))
