@@ -1,5 +1,5 @@
 // Kiwi & Lemon
-const users = ['864311867765686332', '653079222088106005']
+const users = ['864311867765686332', '653079222088106005', '259154320186933248']
 const LearnReminder = {
   cronPattern: '0 * * * *', // every hour at minute 0
   channel: '💬｜general',
