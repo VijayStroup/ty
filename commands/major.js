@@ -56,7 +56,12 @@ const options = [
     label: 'Women Studies',
     emoji: '👯‍♀️',
     value: 'WomenStudies'
-  }
+  },
+  {
+    label: 'Forensic Science',
+    emoji:  '🔎',
+    value: 'ForensicScience'
+  },
 ]
 
 const rolesMap = {
@@ -70,7 +75,8 @@ const rolesMap = {
   Mathematics: 'Mathematics',
   MechanicalEngineering: 'Mechanical Engineering',
   Psychology: 'Psychology',
-  WomenStudies: 'Women Studies'
+  WomenStudies: 'Women Studies',
+  ForensicScience: 'Forensic Science'
 }
 
 const rolesSet = new Set(Object.keys(rolesMap))
