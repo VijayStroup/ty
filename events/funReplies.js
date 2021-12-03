@@ -23,6 +23,8 @@ const FunReplies = {
         await message.reply('bing bong')
       else if (loweredMessage === 'stop')
         await message.reply('no you')
+      else if (loweredMessage === '69')
+        await message.reply('nice')
     }
   }
 }
