@@ -7,8 +7,7 @@ const Pin = {
   name: 'raw',
   async execute(packet) {
     if (packet.t !== 'MESSAGE_REACTION_ADD') return
-
-    const threshold = (await (await client.guilds.fetch(process.env.GUILD_ID)).members.fetch()).size * .2
+    const threshold = 5
     const message = await (await client.channels.fetch(packet.d.channel_id)).messages.fetch(packet.d.message_id)
 
     if (message.reactions.resolve('📌') && !message.pinned && message.reactions.resolve('📌').count >= threshold) {
