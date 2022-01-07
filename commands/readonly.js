@@ -11,7 +11,7 @@ const ReadOnly = {
     )
     .setDefaultPermission(false),
   roles: ['Admin'],
-  members: ['841043611414954034', '928788809087324201'],
+  members: ['841043611414954034'],
   async execute(interaction) {
     const target = interaction.options.getMember('user')
     const roles = interaction.guild.roles.cache
