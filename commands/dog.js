@@ -12,7 +12,7 @@ const Dog = {
     const res = await axios.get(url)
 
     if (res.status !== 200) {
-        console.error(`[${new Date().toString()}] Error getting dog of the day`)
+      console.error(`[${new Date().toString()}] Error getting dog of the day`)
       return
     }
 
