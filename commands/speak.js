@@ -9,7 +9,7 @@ const Speak = {
         .setDescription('Message.')
         .setRequired(true))
     .setDefaultPermission(false),
-  members: ['841043611414954034'],
+  members: ['841043611414954034', '177940582226722816'],
   async execute(interaction) {
     await interaction.channel.send(interaction.options.getString('message'))
     await interaction.reply({content: '🦴', ephemeral: true })
