@@ -7,7 +7,7 @@ const Dog = {
   builder: new SlashCommandBuilder()
     .setName('dog')
     .setDescription('get dog pictures'),
-  channel: '🐕｜pets',
+  channels: '🐕｜pets',
   async execute(interaction) {
     const res = await axios.get(url)
 

@@ -8,7 +8,10 @@ const InteractionCreate = {
 
       // check if valid channel
       if (command.channels && !command.channels.includes(interaction.channel.name)) {
-        await interaction.reply({ content: `You can only use this command in ${command.channels.join(', ')}.`, ephemeral: true })
+        if (typeof command.channels === 'string')
+          await interaction.reply({ content: `You can only use this command in ${command.channels}.`, ephemeral: true })
+        else
+          await interaction.reply({ content: `You can only use this command in ${command.channels.join(', ')}.`, ephemeral: true })
         return
       }
 
