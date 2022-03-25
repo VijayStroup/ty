@@ -1,4 +1,4 @@
-# Frodo
+# Ty
 A discord bot to help facilitate operations in the [Knights Discord](https://discord.gg/GbGZDWxdVD).
 
 ## Command Options
