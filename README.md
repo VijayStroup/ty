@@ -1,5 +1,5 @@
-# Frodo
-A discord bot to help facilitate operations in the [Knights Discord](https://discord.gg/GbGZDWxdVD).
+# Ty
+A discord bot to help facilitate operations in the Knights Discord.
 
 ## Command Options
 | Syntax | Description |
