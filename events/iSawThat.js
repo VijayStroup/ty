@@ -1,11 +1,16 @@
-const ignored = ['864311867765686332', '369212248553422850']
+const ignored = ['864311867765686332']
 
 const ISawThat = {
   name: 'messageDelete',
   async execute(message) {
     if (message.author.bot) return
-    if (ignored.includes(message.author.id)) return
-    await message.channel.send(`i saw that <@${message.author.id}>`)
+
+    const coin = (Math.floor(Math.random() * 2) == 0)
+
+    if (coin) {
+      if (ignored.includes(message.author.id)) return
+      await message.channel.send(`i saw that <@${message.author.id}>`)
+    }
   }
 }
 
