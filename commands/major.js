@@ -65,6 +65,7 @@ const options = [
 ]
 
 const rolesMap = {
+  Aerospace: 'Aerospace',
   Business: 'Business',
   ComputerEngineering: 'Computer Engineering',
   ComputerScience: 'Computer Science',
