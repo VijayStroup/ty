@@ -3,6 +3,11 @@ import { MessageActionRow, MessageSelectMenu } from 'discord.js'
 
 const options = [
   {
+    label: 'Aerospace',
+    emoji: '✈️',
+    value: 'Aerospace'
+  },
+  {
     label: 'Business',
     emoji: '🏢',
     value: 'Business'
@@ -51,7 +56,7 @@ const options = [
     label: 'Psychology',
     emoji: '🤯',
     value: 'Psychology'
-  },
+  }, 
   {
     label: 'Women Studies',
     emoji: '👯‍♀️',
